@@ -9,7 +9,7 @@ type Props = HeaderType;
 
 const Header = (props: Props) => (
   <Wrapper>
-    <a href="#">
+    <a href="" className="primary">
       <Image src={props.image} alt={props.name} />
     </a>
     <Name>
@@ -18,14 +18,14 @@ const Header = (props: Props) => (
         <Tag>
           {' '}
           {
-            <a href="#" className="link secondary">
+            <a href="" className="secondary">
               @{shrinkName(props.name)}
             </a>
           }{' '}
           &middot; {props.date}
         </Tag>
       }
-      <Arrow>▽</Arrow>
+      <Arrow className="icon icon-chevron-down" tabIndex={0} />
     </Name>
   </Wrapper>
 );

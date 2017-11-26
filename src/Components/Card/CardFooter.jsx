@@ -1,13 +1,21 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
+import { Wrapper, Action, Counter } from './Styles/CardFooterStyled';
 
-const Wrapper = styled.div`
-  background: green;
-`;
 const Footer = () => (
   <Wrapper>
-    <p>Footer</p>
+    <Action href="" className="secondary action">
+      <span className="icon icon-comment" /> <Counter>2</Counter>
+    </Action>
+    <Action href="" className="secondary action">
+      <span className="icon icon-share" /> <Counter>49</Counter>
+    </Action>
+    <Action href="" className="secondary action">
+      <span className="icon icon-heart" /> <Counter>10</Counter>
+    </Action>
+    <Action href="" className="secondary action">
+      <span className="icon icon-mail" />
+    </Action>
   </Wrapper>
 );
 

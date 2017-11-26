@@ -3,7 +3,7 @@ import React from 'react';
 import Footer from './CardFooter';
 import Header from './CardHeader';
 import Main from './CardMain';
-import { Wrapper } from './Styles/CardStyled';
+import Wrapper from './Styles/CardStyled';
 
 export type HeaderType = {
   image: string,

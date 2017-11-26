@@ -7,6 +7,9 @@ import {
   Author,
   Embedded,
   Image,
+  Header,
+  Text,
+  URL,
 } from './Styles/CardMainStyled';
 import { type MainType } from './Card';
 
@@ -22,7 +25,7 @@ function extractHashtag(propsMessage) {
     [hashtag] = match;
     return [
       <span key={message}>{message}</span>,
-      <a href="#" className="link" key={hashtag}>
+      <a href="" className="primary" key={hashtag}>
         {hashtag}
       </a>,
     ];
@@ -36,7 +39,7 @@ const Main = (props: Props) => (
 
     {props.author && (
       <Author>
-        <a href="#" className="link">
+        <a href="" className="primary">
           @{props.author}
         </a>
       </Author>
@@ -44,7 +47,14 @@ const Main = (props: Props) => (
 
     {props.payload.image && (
       <Embedded>
-        <Image src={props.payload.image}>{}</Image>
+        <Image src={props.payload.image} height={370} width={622.61} />
+        <div>
+          <Header>{props.payload.title}</Header>
+          <Text>{props.payload.text}</Text>
+          <URL href={props.payload.url} className="secondary">
+            {props.payload.url}
+          </URL>
+        </div>
       </Embedded>
     )}
   </Wrapper>

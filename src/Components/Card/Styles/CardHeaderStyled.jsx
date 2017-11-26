@@ -22,29 +22,15 @@ export const Name = styled.p`
   margin: 0 0 5px;
 `;
 
-export const Tag = styled.span`
-  color: #9e9e9e;
-  .link.secondary:link {
-    color: inherit;
-    text-decoration: none;
-  }
-  .link.secondary:visited {
-    color: inherit;
-    text-decoration: none;
-  }
-  .link.secondary:hover {
-    color: #757575;
-    text-decoration: underline;
-  }
-`;
+export const Tag = styled.span``;
 
 export const Arrow = styled.span`
   float: right;
-  margin-top: 2px;
   display: inline-block;
-  transform: scale(2, 1);
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 1.4rem;
+  &.icon {
+    line-height: 0.6;
+  }
   color: lightgray;
   transition: color 100ms;
   &:hover {

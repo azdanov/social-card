@@ -7,7 +7,7 @@ import { createSerializer } from 'enzyme-to-json';
 import App from './App';
 
 configure({ adapter: new Adapter() });
-expect.addSnapshotSerializer(createSerializer({ mode: 'shallow' }));
+expect.addSnapshotSerializer(createSerializer({ mode: 'deep' }));
 
 describe('App', () => {
   it('renders without crashing', () => {
