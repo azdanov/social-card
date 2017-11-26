@@ -16,7 +16,13 @@ export default function mockData(times = 3) {
       } #${faker.helpers.slugify(faker.random.word())}`,
       author: `${Math.random() < 0.5 ? faker.internet.userName() : ''}`,
       payload: {
-        image: Math.random() < 0.5 ? faker.image.image() : faker.random.image(),
+        image: faker.image.imageUrl(
+          undefined,
+          undefined,
+          undefined,
+          true,
+          true,
+        ),
         title: faker.random.words(),
         text: faker.random.words(faker.random.number({ min: 5, max: 19 })),
         url: faker.internet.url(),
