@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Wrapper, Image, Arrow, Name, Tag } from './Styles/CardHeaderStyled';
+import { Wrapper, Image, Arrow, Name } from './Styles/CardHeaderStyled';
 import shrinkName from '../../Utilities/shrinkName';
 import { type HeaderType } from './Card';
 
@@ -15,7 +15,7 @@ const Header = (props: Props) => (
     <Name>
       {props.name}
       {
-        <Tag>
+        <span>
           {' '}
           {
             <a href="" className="secondary">
@@ -23,7 +23,7 @@ const Header = (props: Props) => (
             </a>
           }{' '}
           &middot; {props.date}
-        </Tag>
+        </span>
       }
       <Arrow className="icon icon-chevron-down" tabIndex={0} />
     </Name>

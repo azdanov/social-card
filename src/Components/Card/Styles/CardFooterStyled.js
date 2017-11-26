@@ -12,6 +12,7 @@ export const Action = styled.a`
   font-size: 1.2rem;
   line-height: 1rem;
   margin-left: 3rem;
+
   &:first-of-type {
     margin-left: 0;
   }

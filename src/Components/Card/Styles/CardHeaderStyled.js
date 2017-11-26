@@ -2,11 +2,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  &:after {
+  &::after {
     content: '';
     display: table;
     clear: both;
   }
+
   padding: 10px;
 `;
 
@@ -22,17 +23,18 @@ export const Name = styled.p`
   margin: 0 0 5px;
 `;
 
-export const Tag = styled.span``;
-
 export const Arrow = styled.span`
   float: right;
   display: inline-block;
   font-size: 1.4rem;
+
   &.icon {
     line-height: 0.6;
   }
+
   color: lightgray;
   transition: color 100ms;
+
   &:hover {
     color: gray;
     cursor: pointer;
