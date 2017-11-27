@@ -2,6 +2,7 @@
 import styled, { injectGlobal } from 'styled-components';
 import icomoon from '../../../fonts/icomoon.woff';
 
+//  eslint-disable-next-line no-unused-expressions
 injectGlobal`
   @font-face {
     font-family: 'icomoon';
@@ -19,32 +20,32 @@ injectGlobal`
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   .icon-chevron-down::before {
     content: "\\f0a3";
   }
-  
+
   .icon-comment::before {
     content: "\\f02b";
   }
-  
+
   .icon-share::before {
     content: "\\f0ac";
   }
-  
+
   .icon-heart::before {
     content: "\\2665";
   }
-  
+
   .icon-mail::before {
     content: "\\f03b";
   }
- 
+
 `;
 const Wrapper = styled.div`
   background-color: white;
